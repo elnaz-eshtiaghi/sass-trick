@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+$bgcolor: #191f26f5;
+$btn: #eff300;
+$gray: #DBE0E6;
+
+.text {
+    font-size: 0px;
+    color: aliceblue;
+    font-style: italic;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: $bgcolor;
+    position: relative;
+    overflow: hidden;
+
+    >.photo {
+        >* {
+            position: absolute;
+            transition: 2s;
+            z-index: 2;
+        }
+
+        >figure {
+            >img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+
+            }
+
+            &:nth-of-type(1) {
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                transition: 1s;
+
+            }
+
+            &:nth-of-type(2) {
+                top: 130%;
+                right: 10%;
+                width: 20%;
+                transition: 0.7s;
+            }
+
+            &:nth-of-type(3) {
+                bottom: 0;
+                left: -15%;
+                height: 60%;
+
+            }
+        }
+
+        >h1 {
+            @extend .text;
+            width: 38%;
+            top: 40%;
+            right: -50%;
+
+            >span {
+                color: $btn;
+            }
+        }
+
+        >a {
+            color: #fff;
+            padding: 15px 30px;
+            top: 73%;
+            z-index: 5;
+            transition-timing-function: ease-in-out;
+            transition: 2.7s;
+            text-transform: uppercase;
+            transition: 2s;
+
+            &:first-of-type {
+                right: - 35%;
+                background-color: $btn;
+                color: #000;
+                font-weight: bold;
+                border: 1px solid $btn;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0);
+                    color: #fff;
+                }
+            }
+
+            &:last-of-type {
+                right: -54%;
+                border: 1px solid white;
+            }
+
+            &:hover {
+                border: 1px solid $btn;
+                transform: translateY(-5px);
+            }
+
+        }
+
+        >strong {
+            color: #fff;
+            top: 7%;
+            left: 5%;
+            text-transform: capitalize;
+            font-size: 20px;
+            padding: 0 10px;
+            border-left: 1px solid $btn;
+        }
+    }
+
+    >.star {
+        overflow: hidden;
+
+        >.container {
+            >div {
+                position: absolute;
+
+                @for $i from 1 through 200 {
+                    &:nth-of-type(#{$i}) {
+                        $size: random(5)+px;
+                        width: $size;
+                        height: $size;
+                        top: -100%;
+                        left: random(1200)+px;
+                        border-radius: 50%;
+                        background-color: azure;
+                        opacity: random(1);
+                        transition: random(20)+s;
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover {
+        >.photo {
+            >figure {
+                &:first-of-type {
+                    height: 40%;
+                }
+
+                &:nth-of-type(2) {
+                    top: 3%;
+                }
+
+                &:nth-of-type(3) {
+                    left: 15%;
+                }
+
+            }
+
+            >h1 {
+                right: 27%;
+                font-size: 50px;
+            }
+
+            >a {
+                &:first-of-type {
+                    right: 29%;
+                }
+
+                &:last-of-type {
+                    right: 48%;
+                }
+            }
+        }
+
+        >.star>.container>div {
+            @for $i from 1 through 200 {
+                &:nth-of-type(#{$i}) {
+                    top: random(600)+px;
+                }
+            }
+        }
+    }
+}

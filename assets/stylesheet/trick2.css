@@ -1,0 +1,2727 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text, main > .photo > h1 {
+  font-size: 0px;
+  color: aliceblue;
+  font-style: italic;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(25, 31, 38, 0.9607843137);
+  position: relative;
+  overflow: hidden;
+}
+main > .photo > * {
+  position: absolute;
+  transition: 2s;
+  z-index: 2;
+}
+main > .photo > figure > img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .photo > figure:nth-of-type(1) {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: 1s;
+}
+main > .photo > figure:nth-of-type(2) {
+  top: 130%;
+  right: 10%;
+  width: 20%;
+  transition: 0.7s;
+}
+main > .photo > figure:nth-of-type(3) {
+  bottom: 0;
+  left: -15%;
+  height: 60%;
+}
+main > .photo > h1 {
+  width: 38%;
+  top: 40%;
+  right: -50%;
+}
+main > .photo > h1 > span {
+  color: #eff300;
+}
+main > .photo > a {
+  color: #fff;
+  padding: 15px 30px;
+  top: 73%;
+  z-index: 5;
+  transition-timing-function: ease-in-out;
+  transition: 2.7s;
+  text-transform: uppercase;
+  transition: 2s;
+}
+main > .photo > a:first-of-type {
+  right: -35%;
+  background-color: #eff300;
+  color: #000;
+  font-weight: bold;
+  border: 1px solid #eff300;
+}
+main > .photo > a:first-of-type:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+}
+main > .photo > a:last-of-type {
+  right: -54%;
+  border: 1px solid white;
+}
+main > .photo > a:hover {
+  border: 1px solid #eff300;
+  transform: translateY(-5px);
+}
+main > .photo > strong {
+  color: #fff;
+  top: 7%;
+  left: 5%;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 0 10px;
+  border-left: 1px solid #eff300;
+}
+main > .star {
+  overflow: hidden;
+}
+main > .star > .container > div {
+  position: absolute;
+}
+main > .star > .container > div:nth-of-type(1) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 1180px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 11s;
+}
+main > .star > .container > div:nth-of-type(2) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 919px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 9s;
+}
+main > .star > .container > div:nth-of-type(3) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 630px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 17s;
+}
+main > .star > .container > div:nth-of-type(4) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 994px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 15s;
+}
+main > .star > .container > div:nth-of-type(5) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 16px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 5s;
+}
+main > .star > .container > div:nth-of-type(6) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 450px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 20s;
+}
+main > .star > .container > div:nth-of-type(7) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 232px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 1s;
+}
+main > .star > .container > div:nth-of-type(8) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 801px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 14s;
+}
+main > .star > .container > div:nth-of-type(9) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 273px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 19s;
+}
+main > .star > .container > div:nth-of-type(10) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 1036px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 8s;
+}
+main > .star > .container > div:nth-of-type(11) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 147px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 19s;
+}
+main > .star > .container > div:nth-of-type(12) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 1044px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 7s;
+}
+main > .star > .container > div:nth-of-type(13) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 17px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 11s;
+}
+main > .star > .container > div:nth-of-type(14) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 250px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 16s;
+}
+main > .star > .container > div:nth-of-type(15) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 634px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 17s;
+}
+main > .star > .container > div:nth-of-type(16) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 293px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 9s;
+}
+main > .star > .container > div:nth-of-type(17) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 320px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 11s;
+}
+main > .star > .container > div:nth-of-type(18) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 47px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 6s;
+}
+main > .star > .container > div:nth-of-type(19) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 27px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 19s;
+}
+main > .star > .container > div:nth-of-type(20) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 458px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 19s;
+}
+main > .star > .container > div:nth-of-type(21) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 384px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 13s;
+}
+main > .star > .container > div:nth-of-type(22) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 799px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 15s;
+}
+main > .star > .container > div:nth-of-type(23) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 11px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 10s;
+}
+main > .star > .container > div:nth-of-type(24) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 546px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 20s;
+}
+main > .star > .container > div:nth-of-type(25) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 332px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 6s;
+}
+main > .star > .container > div:nth-of-type(26) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 31px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 15s;
+}
+main > .star > .container > div:nth-of-type(27) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 1061px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 17s;
+}
+main > .star > .container > div:nth-of-type(28) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 536px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 9s;
+}
+main > .star > .container > div:nth-of-type(29) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 638px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 6s;
+}
+main > .star > .container > div:nth-of-type(30) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 78px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 17s;
+}
+main > .star > .container > div:nth-of-type(31) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 980px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 9s;
+}
+main > .star > .container > div:nth-of-type(32) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 288px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 11s;
+}
+main > .star > .container > div:nth-of-type(33) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 25px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 20s;
+}
+main > .star > .container > div:nth-of-type(34) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 192px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 2s;
+}
+main > .star > .container > div:nth-of-type(35) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 966px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 17s;
+}
+main > .star > .container > div:nth-of-type(36) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 939px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 8s;
+}
+main > .star > .container > div:nth-of-type(37) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 1062px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 17s;
+}
+main > .star > .container > div:nth-of-type(38) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 841px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 17s;
+}
+main > .star > .container > div:nth-of-type(39) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 1134px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 5s;
+}
+main > .star > .container > div:nth-of-type(40) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 67px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 7s;
+}
+main > .star > .container > div:nth-of-type(41) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 517px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 5s;
+}
+main > .star > .container > div:nth-of-type(42) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 656px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 2s;
+}
+main > .star > .container > div:nth-of-type(43) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 774px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 10s;
+}
+main > .star > .container > div:nth-of-type(44) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 409px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 1s;
+}
+main > .star > .container > div:nth-of-type(45) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 510px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 15s;
+}
+main > .star > .container > div:nth-of-type(46) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 37px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 16s;
+}
+main > .star > .container > div:nth-of-type(47) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 384px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 13s;
+}
+main > .star > .container > div:nth-of-type(48) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 947px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 10s;
+}
+main > .star > .container > div:nth-of-type(49) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 1062px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 14s;
+}
+main > .star > .container > div:nth-of-type(50) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 855px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 12s;
+}
+main > .star > .container > div:nth-of-type(51) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 28px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 8s;
+}
+main > .star > .container > div:nth-of-type(52) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 636px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 12s;
+}
+main > .star > .container > div:nth-of-type(53) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 16px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 17s;
+}
+main > .star > .container > div:nth-of-type(54) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 40px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 17s;
+}
+main > .star > .container > div:nth-of-type(55) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 572px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 20s;
+}
+main > .star > .container > div:nth-of-type(56) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 29px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 7s;
+}
+main > .star > .container > div:nth-of-type(57) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 1137px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 1s;
+}
+main > .star > .container > div:nth-of-type(58) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 708px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 10s;
+}
+main > .star > .container > div:nth-of-type(59) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 588px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 5s;
+}
+main > .star > .container > div:nth-of-type(60) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 880px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 2s;
+}
+main > .star > .container > div:nth-of-type(61) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 414px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 19s;
+}
+main > .star > .container > div:nth-of-type(62) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 1062px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 12s;
+}
+main > .star > .container > div:nth-of-type(63) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 30px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 2s;
+}
+main > .star > .container > div:nth-of-type(64) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 386px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 16s;
+}
+main > .star > .container > div:nth-of-type(65) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 6px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 10s;
+}
+main > .star > .container > div:nth-of-type(66) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 443px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 8s;
+}
+main > .star > .container > div:nth-of-type(67) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 957px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 5s;
+}
+main > .star > .container > div:nth-of-type(68) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 167px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 11s;
+}
+main > .star > .container > div:nth-of-type(69) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 370px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 7s;
+}
+main > .star > .container > div:nth-of-type(70) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 312px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 20s;
+}
+main > .star > .container > div:nth-of-type(71) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 886px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 14s;
+}
+main > .star > .container > div:nth-of-type(72) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 962px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 14s;
+}
+main > .star > .container > div:nth-of-type(73) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 216px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 9s;
+}
+main > .star > .container > div:nth-of-type(74) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 881px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 3s;
+}
+main > .star > .container > div:nth-of-type(75) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 496px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 18s;
+}
+main > .star > .container > div:nth-of-type(76) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 100px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 9s;
+}
+main > .star > .container > div:nth-of-type(77) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 573px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 1s;
+}
+main > .star > .container > div:nth-of-type(78) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 100px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 8s;
+}
+main > .star > .container > div:nth-of-type(79) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 667px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 5s;
+}
+main > .star > .container > div:nth-of-type(80) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 1145px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 12s;
+}
+main > .star > .container > div:nth-of-type(81) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 1158px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 19s;
+}
+main > .star > .container > div:nth-of-type(82) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 396px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 13s;
+}
+main > .star > .container > div:nth-of-type(83) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 615px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 20s;
+}
+main > .star > .container > div:nth-of-type(84) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 874px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 13s;
+}
+main > .star > .container > div:nth-of-type(85) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 906px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 13s;
+}
+main > .star > .container > div:nth-of-type(86) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 50px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 18s;
+}
+main > .star > .container > div:nth-of-type(87) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 996px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 15s;
+}
+main > .star > .container > div:nth-of-type(88) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 921px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 15s;
+}
+main > .star > .container > div:nth-of-type(89) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 788px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 12s;
+}
+main > .star > .container > div:nth-of-type(90) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 1161px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 11s;
+}
+main > .star > .container > div:nth-of-type(91) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 1040px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 1s;
+}
+main > .star > .container > div:nth-of-type(92) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 371px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 3s;
+}
+main > .star > .container > div:nth-of-type(93) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 17px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 15s;
+}
+main > .star > .container > div:nth-of-type(94) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 106px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 11s;
+}
+main > .star > .container > div:nth-of-type(95) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 474px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 4s;
+}
+main > .star > .container > div:nth-of-type(96) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 1077px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 4s;
+}
+main > .star > .container > div:nth-of-type(97) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 579px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 20s;
+}
+main > .star > .container > div:nth-of-type(98) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 595px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 12s;
+}
+main > .star > .container > div:nth-of-type(99) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 935px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 9s;
+}
+main > .star > .container > div:nth-of-type(100) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 1021px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 12s;
+}
+main > .star > .container > div:nth-of-type(101) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 690px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 14s;
+}
+main > .star > .container > div:nth-of-type(102) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 619px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 1s;
+}
+main > .star > .container > div:nth-of-type(103) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 666px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 12s;
+}
+main > .star > .container > div:nth-of-type(104) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 1009px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 9s;
+}
+main > .star > .container > div:nth-of-type(105) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 263px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 4s;
+}
+main > .star > .container > div:nth-of-type(106) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 913px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 13s;
+}
+main > .star > .container > div:nth-of-type(107) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 1159px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 15s;
+}
+main > .star > .container > div:nth-of-type(108) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 948px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 11s;
+}
+main > .star > .container > div:nth-of-type(109) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 922px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 11s;
+}
+main > .star > .container > div:nth-of-type(110) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 1012px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 2s;
+}
+main > .star > .container > div:nth-of-type(111) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 602px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 18s;
+}
+main > .star > .container > div:nth-of-type(112) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 711px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 16s;
+}
+main > .star > .container > div:nth-of-type(113) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 720px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 1s;
+}
+main > .star > .container > div:nth-of-type(114) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 818px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 3s;
+}
+main > .star > .container > div:nth-of-type(115) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 169px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 11s;
+}
+main > .star > .container > div:nth-of-type(116) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 268px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 10s;
+}
+main > .star > .container > div:nth-of-type(117) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 988px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 4s;
+}
+main > .star > .container > div:nth-of-type(118) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 831px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 3s;
+}
+main > .star > .container > div:nth-of-type(119) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 535px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 4s;
+}
+main > .star > .container > div:nth-of-type(120) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 390px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 14s;
+}
+main > .star > .container > div:nth-of-type(121) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 873px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 14s;
+}
+main > .star > .container > div:nth-of-type(122) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 297px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 15s;
+}
+main > .star > .container > div:nth-of-type(123) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 531px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 17s;
+}
+main > .star > .container > div:nth-of-type(124) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 101px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 19s;
+}
+main > .star > .container > div:nth-of-type(125) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 1032px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 12s;
+}
+main > .star > .container > div:nth-of-type(126) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 279px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 1s;
+}
+main > .star > .container > div:nth-of-type(127) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 1002px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 4s;
+}
+main > .star > .container > div:nth-of-type(128) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 764px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 12s;
+}
+main > .star > .container > div:nth-of-type(129) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 588px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 8s;
+}
+main > .star > .container > div:nth-of-type(130) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 530px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 8s;
+}
+main > .star > .container > div:nth-of-type(131) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 99px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 13s;
+}
+main > .star > .container > div:nth-of-type(132) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 377px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 17s;
+}
+main > .star > .container > div:nth-of-type(133) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 1055px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 3s;
+}
+main > .star > .container > div:nth-of-type(134) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 1071px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 3s;
+}
+main > .star > .container > div:nth-of-type(135) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 178px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 13s;
+}
+main > .star > .container > div:nth-of-type(136) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 557px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 20s;
+}
+main > .star > .container > div:nth-of-type(137) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 1152px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 9s;
+}
+main > .star > .container > div:nth-of-type(138) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 81px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 9s;
+}
+main > .star > .container > div:nth-of-type(139) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 377px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 15s;
+}
+main > .star > .container > div:nth-of-type(140) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 514px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 14s;
+}
+main > .star > .container > div:nth-of-type(141) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 225px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 8s;
+}
+main > .star > .container > div:nth-of-type(142) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 382px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 8s;
+}
+main > .star > .container > div:nth-of-type(143) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 910px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 10s;
+}
+main > .star > .container > div:nth-of-type(144) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 38px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 5s;
+}
+main > .star > .container > div:nth-of-type(145) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 753px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 12s;
+}
+main > .star > .container > div:nth-of-type(146) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 998px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 5s;
+}
+main > .star > .container > div:nth-of-type(147) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 1007px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 16s;
+}
+main > .star > .container > div:nth-of-type(148) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 249px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 11s;
+}
+main > .star > .container > div:nth-of-type(149) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 1057px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 16s;
+}
+main > .star > .container > div:nth-of-type(150) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 707px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 20s;
+}
+main > .star > .container > div:nth-of-type(151) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 171px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 17s;
+}
+main > .star > .container > div:nth-of-type(152) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 40px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 3s;
+}
+main > .star > .container > div:nth-of-type(153) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 635px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 3s;
+}
+main > .star > .container > div:nth-of-type(154) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 750px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 17s;
+}
+main > .star > .container > div:nth-of-type(155) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 927px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 3s;
+}
+main > .star > .container > div:nth-of-type(156) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 406px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 3s;
+}
+main > .star > .container > div:nth-of-type(157) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 171px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 8s;
+}
+main > .star > .container > div:nth-of-type(158) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 276px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 3s;
+}
+main > .star > .container > div:nth-of-type(159) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 191px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 14s;
+}
+main > .star > .container > div:nth-of-type(160) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 406px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 11s;
+}
+main > .star > .container > div:nth-of-type(161) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 1033px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 20s;
+}
+main > .star > .container > div:nth-of-type(162) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 104px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 7s;
+}
+main > .star > .container > div:nth-of-type(163) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 969px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 1s;
+}
+main > .star > .container > div:nth-of-type(164) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 734px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 13s;
+}
+main > .star > .container > div:nth-of-type(165) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 118px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 11s;
+}
+main > .star > .container > div:nth-of-type(166) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 466px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 7s;
+}
+main > .star > .container > div:nth-of-type(167) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 528px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 15s;
+}
+main > .star > .container > div:nth-of-type(168) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 50px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 8s;
+}
+main > .star > .container > div:nth-of-type(169) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 935px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 18s;
+}
+main > .star > .container > div:nth-of-type(170) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 79px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 14s;
+}
+main > .star > .container > div:nth-of-type(171) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 940px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 15s;
+}
+main > .star > .container > div:nth-of-type(172) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 353px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 19s;
+}
+main > .star > .container > div:nth-of-type(173) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 1081px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 9s;
+}
+main > .star > .container > div:nth-of-type(174) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 610px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 19s;
+}
+main > .star > .container > div:nth-of-type(175) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 557px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 9s;
+}
+main > .star > .container > div:nth-of-type(176) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 502px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 10s;
+}
+main > .star > .container > div:nth-of-type(177) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 1040px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 2s;
+}
+main > .star > .container > div:nth-of-type(178) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 807px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 19s;
+}
+main > .star > .container > div:nth-of-type(179) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 127px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 17s;
+}
+main > .star > .container > div:nth-of-type(180) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 673px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 13s;
+}
+main > .star > .container > div:nth-of-type(181) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 662px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 11s;
+}
+main > .star > .container > div:nth-of-type(182) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 95px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 19s;
+}
+main > .star > .container > div:nth-of-type(183) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 710px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 16s;
+}
+main > .star > .container > div:nth-of-type(184) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 282px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 6s;
+}
+main > .star > .container > div:nth-of-type(185) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 638px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 6s;
+}
+main > .star > .container > div:nth-of-type(186) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 252px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 20s;
+}
+main > .star > .container > div:nth-of-type(187) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 7px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 20s;
+}
+main > .star > .container > div:nth-of-type(188) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 1155px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 20s;
+}
+main > .star > .container > div:nth-of-type(189) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 858px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 5s;
+}
+main > .star > .container > div:nth-of-type(190) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 456px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 17s;
+}
+main > .star > .container > div:nth-of-type(191) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 205px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 4s;
+}
+main > .star > .container > div:nth-of-type(192) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 587px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 11s;
+}
+main > .star > .container > div:nth-of-type(193) {
+  width: 2px;
+  height: 2px;
+  top: -100%;
+  left: 33px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 3s;
+}
+main > .star > .container > div:nth-of-type(194) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 912px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 13s;
+}
+main > .star > .container > div:nth-of-type(195) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 824px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 9s;
+}
+main > .star > .container > div:nth-of-type(196) {
+  width: 4px;
+  height: 4px;
+  top: -100%;
+  left: 369px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 6s;
+}
+main > .star > .container > div:nth-of-type(197) {
+  width: 5px;
+  height: 5px;
+  top: -100%;
+  left: 265px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 1s;
+}
+main > .star > .container > div:nth-of-type(198) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 740px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 19s;
+}
+main > .star > .container > div:nth-of-type(199) {
+  width: 3px;
+  height: 3px;
+  top: -100%;
+  left: 587px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 6s;
+}
+main > .star > .container > div:nth-of-type(200) {
+  width: 1px;
+  height: 1px;
+  top: -100%;
+  left: 1042px;
+  border-radius: 50%;
+  background-color: azure;
+  opacity: 1;
+  transition: 5s;
+}
+main:hover > .photo > figure:first-of-type {
+  height: 40%;
+}
+main:hover > .photo > figure:nth-of-type(2) {
+  top: 3%;
+}
+main:hover > .photo > figure:nth-of-type(3) {
+  left: 15%;
+}
+main:hover > .photo > h1 {
+  right: 27%;
+  font-size: 50px;
+}
+main:hover > .photo > a:first-of-type {
+  right: 29%;
+}
+main:hover > .photo > a:last-of-type {
+  right: 48%;
+}
+main:hover > .star > .container > div:nth-of-type(1) {
+  top: 47px;
+}
+main:hover > .star > .container > div:nth-of-type(2) {
+  top: 259px;
+}
+main:hover > .star > .container > div:nth-of-type(3) {
+  top: 465px;
+}
+main:hover > .star > .container > div:nth-of-type(4) {
+  top: 261px;
+}
+main:hover > .star > .container > div:nth-of-type(5) {
+  top: 151px;
+}
+main:hover > .star > .container > div:nth-of-type(6) {
+  top: 332px;
+}
+main:hover > .star > .container > div:nth-of-type(7) {
+  top: 350px;
+}
+main:hover > .star > .container > div:nth-of-type(8) {
+  top: 99px;
+}
+main:hover > .star > .container > div:nth-of-type(9) {
+  top: 155px;
+}
+main:hover > .star > .container > div:nth-of-type(10) {
+  top: 321px;
+}
+main:hover > .star > .container > div:nth-of-type(11) {
+  top: 541px;
+}
+main:hover > .star > .container > div:nth-of-type(12) {
+  top: 23px;
+}
+main:hover > .star > .container > div:nth-of-type(13) {
+  top: 514px;
+}
+main:hover > .star > .container > div:nth-of-type(14) {
+  top: 399px;
+}
+main:hover > .star > .container > div:nth-of-type(15) {
+  top: 329px;
+}
+main:hover > .star > .container > div:nth-of-type(16) {
+  top: 94px;
+}
+main:hover > .star > .container > div:nth-of-type(17) {
+  top: 58px;
+}
+main:hover > .star > .container > div:nth-of-type(18) {
+  top: 23px;
+}
+main:hover > .star > .container > div:nth-of-type(19) {
+  top: 163px;
+}
+main:hover > .star > .container > div:nth-of-type(20) {
+  top: 418px;
+}
+main:hover > .star > .container > div:nth-of-type(21) {
+  top: 319px;
+}
+main:hover > .star > .container > div:nth-of-type(22) {
+  top: 78px;
+}
+main:hover > .star > .container > div:nth-of-type(23) {
+  top: 589px;
+}
+main:hover > .star > .container > div:nth-of-type(24) {
+  top: 185px;
+}
+main:hover > .star > .container > div:nth-of-type(25) {
+  top: 372px;
+}
+main:hover > .star > .container > div:nth-of-type(26) {
+  top: 539px;
+}
+main:hover > .star > .container > div:nth-of-type(27) {
+  top: 484px;
+}
+main:hover > .star > .container > div:nth-of-type(28) {
+  top: 9px;
+}
+main:hover > .star > .container > div:nth-of-type(29) {
+  top: 345px;
+}
+main:hover > .star > .container > div:nth-of-type(30) {
+  top: 490px;
+}
+main:hover > .star > .container > div:nth-of-type(31) {
+  top: 530px;
+}
+main:hover > .star > .container > div:nth-of-type(32) {
+  top: 461px;
+}
+main:hover > .star > .container > div:nth-of-type(33) {
+  top: 231px;
+}
+main:hover > .star > .container > div:nth-of-type(34) {
+  top: 388px;
+}
+main:hover > .star > .container > div:nth-of-type(35) {
+  top: 596px;
+}
+main:hover > .star > .container > div:nth-of-type(36) {
+  top: 77px;
+}
+main:hover > .star > .container > div:nth-of-type(37) {
+  top: 403px;
+}
+main:hover > .star > .container > div:nth-of-type(38) {
+  top: 147px;
+}
+main:hover > .star > .container > div:nth-of-type(39) {
+  top: 528px;
+}
+main:hover > .star > .container > div:nth-of-type(40) {
+  top: 39px;
+}
+main:hover > .star > .container > div:nth-of-type(41) {
+  top: 233px;
+}
+main:hover > .star > .container > div:nth-of-type(42) {
+  top: 310px;
+}
+main:hover > .star > .container > div:nth-of-type(43) {
+  top: 596px;
+}
+main:hover > .star > .container > div:nth-of-type(44) {
+  top: 495px;
+}
+main:hover > .star > .container > div:nth-of-type(45) {
+  top: 440px;
+}
+main:hover > .star > .container > div:nth-of-type(46) {
+  top: 385px;
+}
+main:hover > .star > .container > div:nth-of-type(47) {
+  top: 17px;
+}
+main:hover > .star > .container > div:nth-of-type(48) {
+  top: 63px;
+}
+main:hover > .star > .container > div:nth-of-type(49) {
+  top: 237px;
+}
+main:hover > .star > .container > div:nth-of-type(50) {
+  top: 451px;
+}
+main:hover > .star > .container > div:nth-of-type(51) {
+  top: 547px;
+}
+main:hover > .star > .container > div:nth-of-type(52) {
+  top: 16px;
+}
+main:hover > .star > .container > div:nth-of-type(53) {
+  top: 167px;
+}
+main:hover > .star > .container > div:nth-of-type(54) {
+  top: 74px;
+}
+main:hover > .star > .container > div:nth-of-type(55) {
+  top: 224px;
+}
+main:hover > .star > .container > div:nth-of-type(56) {
+  top: 582px;
+}
+main:hover > .star > .container > div:nth-of-type(57) {
+  top: 190px;
+}
+main:hover > .star > .container > div:nth-of-type(58) {
+  top: 57px;
+}
+main:hover > .star > .container > div:nth-of-type(59) {
+  top: 453px;
+}
+main:hover > .star > .container > div:nth-of-type(60) {
+  top: 489px;
+}
+main:hover > .star > .container > div:nth-of-type(61) {
+  top: 371px;
+}
+main:hover > .star > .container > div:nth-of-type(62) {
+  top: 310px;
+}
+main:hover > .star > .container > div:nth-of-type(63) {
+  top: 257px;
+}
+main:hover > .star > .container > div:nth-of-type(64) {
+  top: 151px;
+}
+main:hover > .star > .container > div:nth-of-type(65) {
+  top: 565px;
+}
+main:hover > .star > .container > div:nth-of-type(66) {
+  top: 106px;
+}
+main:hover > .star > .container > div:nth-of-type(67) {
+  top: 221px;
+}
+main:hover > .star > .container > div:nth-of-type(68) {
+  top: 420px;
+}
+main:hover > .star > .container > div:nth-of-type(69) {
+  top: 546px;
+}
+main:hover > .star > .container > div:nth-of-type(70) {
+  top: 364px;
+}
+main:hover > .star > .container > div:nth-of-type(71) {
+  top: 124px;
+}
+main:hover > .star > .container > div:nth-of-type(72) {
+  top: 557px;
+}
+main:hover > .star > .container > div:nth-of-type(73) {
+  top: 366px;
+}
+main:hover > .star > .container > div:nth-of-type(74) {
+  top: 144px;
+}
+main:hover > .star > .container > div:nth-of-type(75) {
+  top: 450px;
+}
+main:hover > .star > .container > div:nth-of-type(76) {
+  top: 420px;
+}
+main:hover > .star > .container > div:nth-of-type(77) {
+  top: 430px;
+}
+main:hover > .star > .container > div:nth-of-type(78) {
+  top: 581px;
+}
+main:hover > .star > .container > div:nth-of-type(79) {
+  top: 276px;
+}
+main:hover > .star > .container > div:nth-of-type(80) {
+  top: 381px;
+}
+main:hover > .star > .container > div:nth-of-type(81) {
+  top: 142px;
+}
+main:hover > .star > .container > div:nth-of-type(82) {
+  top: 62px;
+}
+main:hover > .star > .container > div:nth-of-type(83) {
+  top: 43px;
+}
+main:hover > .star > .container > div:nth-of-type(84) {
+  top: 59px;
+}
+main:hover > .star > .container > div:nth-of-type(85) {
+  top: 238px;
+}
+main:hover > .star > .container > div:nth-of-type(86) {
+  top: 381px;
+}
+main:hover > .star > .container > div:nth-of-type(87) {
+  top: 62px;
+}
+main:hover > .star > .container > div:nth-of-type(88) {
+  top: 282px;
+}
+main:hover > .star > .container > div:nth-of-type(89) {
+  top: 230px;
+}
+main:hover > .star > .container > div:nth-of-type(90) {
+  top: 536px;
+}
+main:hover > .star > .container > div:nth-of-type(91) {
+  top: 156px;
+}
+main:hover > .star > .container > div:nth-of-type(92) {
+  top: 157px;
+}
+main:hover > .star > .container > div:nth-of-type(93) {
+  top: 577px;
+}
+main:hover > .star > .container > div:nth-of-type(94) {
+  top: 260px;
+}
+main:hover > .star > .container > div:nth-of-type(95) {
+  top: 1px;
+}
+main:hover > .star > .container > div:nth-of-type(96) {
+  top: 98px;
+}
+main:hover > .star > .container > div:nth-of-type(97) {
+  top: 42px;
+}
+main:hover > .star > .container > div:nth-of-type(98) {
+  top: 338px;
+}
+main:hover > .star > .container > div:nth-of-type(99) {
+  top: 469px;
+}
+main:hover > .star > .container > div:nth-of-type(100) {
+  top: 323px;
+}
+main:hover > .star > .container > div:nth-of-type(101) {
+  top: 439px;
+}
+main:hover > .star > .container > div:nth-of-type(102) {
+  top: 340px;
+}
+main:hover > .star > .container > div:nth-of-type(103) {
+  top: 260px;
+}
+main:hover > .star > .container > div:nth-of-type(104) {
+  top: 321px;
+}
+main:hover > .star > .container > div:nth-of-type(105) {
+  top: 117px;
+}
+main:hover > .star > .container > div:nth-of-type(106) {
+  top: 291px;
+}
+main:hover > .star > .container > div:nth-of-type(107) {
+  top: 337px;
+}
+main:hover > .star > .container > div:nth-of-type(108) {
+  top: 206px;
+}
+main:hover > .star > .container > div:nth-of-type(109) {
+  top: 444px;
+}
+main:hover > .star > .container > div:nth-of-type(110) {
+  top: 115px;
+}
+main:hover > .star > .container > div:nth-of-type(111) {
+  top: 207px;
+}
+main:hover > .star > .container > div:nth-of-type(112) {
+  top: 290px;
+}
+main:hover > .star > .container > div:nth-of-type(113) {
+  top: 251px;
+}
+main:hover > .star > .container > div:nth-of-type(114) {
+  top: 187px;
+}
+main:hover > .star > .container > div:nth-of-type(115) {
+  top: 476px;
+}
+main:hover > .star > .container > div:nth-of-type(116) {
+  top: 106px;
+}
+main:hover > .star > .container > div:nth-of-type(117) {
+  top: 38px;
+}
+main:hover > .star > .container > div:nth-of-type(118) {
+  top: 69px;
+}
+main:hover > .star > .container > div:nth-of-type(119) {
+  top: 495px;
+}
+main:hover > .star > .container > div:nth-of-type(120) {
+  top: 360px;
+}
+main:hover > .star > .container > div:nth-of-type(121) {
+  top: 315px;
+}
+main:hover > .star > .container > div:nth-of-type(122) {
+  top: 349px;
+}
+main:hover > .star > .container > div:nth-of-type(123) {
+  top: 186px;
+}
+main:hover > .star > .container > div:nth-of-type(124) {
+  top: 56px;
+}
+main:hover > .star > .container > div:nth-of-type(125) {
+  top: 461px;
+}
+main:hover > .star > .container > div:nth-of-type(126) {
+  top: 107px;
+}
+main:hover > .star > .container > div:nth-of-type(127) {
+  top: 342px;
+}
+main:hover > .star > .container > div:nth-of-type(128) {
+  top: 242px;
+}
+main:hover > .star > .container > div:nth-of-type(129) {
+  top: 427px;
+}
+main:hover > .star > .container > div:nth-of-type(130) {
+  top: 313px;
+}
+main:hover > .star > .container > div:nth-of-type(131) {
+  top: 131px;
+}
+main:hover > .star > .container > div:nth-of-type(132) {
+  top: 441px;
+}
+main:hover > .star > .container > div:nth-of-type(133) {
+  top: 447px;
+}
+main:hover > .star > .container > div:nth-of-type(134) {
+  top: 35px;
+}
+main:hover > .star > .container > div:nth-of-type(135) {
+  top: 359px;
+}
+main:hover > .star > .container > div:nth-of-type(136) {
+  top: 197px;
+}
+main:hover > .star > .container > div:nth-of-type(137) {
+  top: 402px;
+}
+main:hover > .star > .container > div:nth-of-type(138) {
+  top: 458px;
+}
+main:hover > .star > .container > div:nth-of-type(139) {
+  top: 254px;
+}
+main:hover > .star > .container > div:nth-of-type(140) {
+  top: 551px;
+}
+main:hover > .star > .container > div:nth-of-type(141) {
+  top: 43px;
+}
+main:hover > .star > .container > div:nth-of-type(142) {
+  top: 138px;
+}
+main:hover > .star > .container > div:nth-of-type(143) {
+  top: 425px;
+}
+main:hover > .star > .container > div:nth-of-type(144) {
+  top: 566px;
+}
+main:hover > .star > .container > div:nth-of-type(145) {
+  top: 280px;
+}
+main:hover > .star > .container > div:nth-of-type(146) {
+  top: 590px;
+}
+main:hover > .star > .container > div:nth-of-type(147) {
+  top: 518px;
+}
+main:hover > .star > .container > div:nth-of-type(148) {
+  top: 338px;
+}
+main:hover > .star > .container > div:nth-of-type(149) {
+  top: 419px;
+}
+main:hover > .star > .container > div:nth-of-type(150) {
+  top: 547px;
+}
+main:hover > .star > .container > div:nth-of-type(151) {
+  top: 182px;
+}
+main:hover > .star > .container > div:nth-of-type(152) {
+  top: 215px;
+}
+main:hover > .star > .container > div:nth-of-type(153) {
+  top: 27px;
+}
+main:hover > .star > .container > div:nth-of-type(154) {
+  top: 206px;
+}
+main:hover > .star > .container > div:nth-of-type(155) {
+  top: 42px;
+}
+main:hover > .star > .container > div:nth-of-type(156) {
+  top: 431px;
+}
+main:hover > .star > .container > div:nth-of-type(157) {
+  top: 115px;
+}
+main:hover > .star > .container > div:nth-of-type(158) {
+  top: 191px;
+}
+main:hover > .star > .container > div:nth-of-type(159) {
+  top: 427px;
+}
+main:hover > .star > .container > div:nth-of-type(160) {
+  top: 460px;
+}
+main:hover > .star > .container > div:nth-of-type(161) {
+  top: 306px;
+}
+main:hover > .star > .container > div:nth-of-type(162) {
+  top: 449px;
+}
+main:hover > .star > .container > div:nth-of-type(163) {
+  top: 192px;
+}
+main:hover > .star > .container > div:nth-of-type(164) {
+  top: 308px;
+}
+main:hover > .star > .container > div:nth-of-type(165) {
+  top: 197px;
+}
+main:hover > .star > .container > div:nth-of-type(166) {
+  top: 422px;
+}
+main:hover > .star > .container > div:nth-of-type(167) {
+  top: 334px;
+}
+main:hover > .star > .container > div:nth-of-type(168) {
+  top: 116px;
+}
+main:hover > .star > .container > div:nth-of-type(169) {
+  top: 310px;
+}
+main:hover > .star > .container > div:nth-of-type(170) {
+  top: 416px;
+}
+main:hover > .star > .container > div:nth-of-type(171) {
+  top: 319px;
+}
+main:hover > .star > .container > div:nth-of-type(172) {
+  top: 265px;
+}
+main:hover > .star > .container > div:nth-of-type(173) {
+  top: 157px;
+}
+main:hover > .star > .container > div:nth-of-type(174) {
+  top: 203px;
+}
+main:hover > .star > .container > div:nth-of-type(175) {
+  top: 277px;
+}
+main:hover > .star > .container > div:nth-of-type(176) {
+  top: 399px;
+}
+main:hover > .star > .container > div:nth-of-type(177) {
+  top: 396px;
+}
+main:hover > .star > .container > div:nth-of-type(178) {
+  top: 349px;
+}
+main:hover > .star > .container > div:nth-of-type(179) {
+  top: 157px;
+}
+main:hover > .star > .container > div:nth-of-type(180) {
+  top: 470px;
+}
+main:hover > .star > .container > div:nth-of-type(181) {
+  top: 159px;
+}
+main:hover > .star > .container > div:nth-of-type(182) {
+  top: 571px;
+}
+main:hover > .star > .container > div:nth-of-type(183) {
+  top: 89px;
+}
+main:hover > .star > .container > div:nth-of-type(184) {
+  top: 215px;
+}
+main:hover > .star > .container > div:nth-of-type(185) {
+  top: 393px;
+}
+main:hover > .star > .container > div:nth-of-type(186) {
+  top: 77px;
+}
+main:hover > .star > .container > div:nth-of-type(187) {
+  top: 288px;
+}
+main:hover > .star > .container > div:nth-of-type(188) {
+  top: 473px;
+}
+main:hover > .star > .container > div:nth-of-type(189) {
+  top: 572px;
+}
+main:hover > .star > .container > div:nth-of-type(190) {
+  top: 32px;
+}
+main:hover > .star > .container > div:nth-of-type(191) {
+  top: 510px;
+}
+main:hover > .star > .container > div:nth-of-type(192) {
+  top: 597px;
+}
+main:hover > .star > .container > div:nth-of-type(193) {
+  top: 115px;
+}
+main:hover > .star > .container > div:nth-of-type(194) {
+  top: 423px;
+}
+main:hover > .star > .container > div:nth-of-type(195) {
+  top: 496px;
+}
+main:hover > .star > .container > div:nth-of-type(196) {
+  top: 194px;
+}
+main:hover > .star > .container > div:nth-of-type(197) {
+  top: 145px;
+}
+main:hover > .star > .container > div:nth-of-type(198) {
+  top: 425px;
+}
+main:hover > .star > .container > div:nth-of-type(199) {
+  top: 571px;
+}
+main:hover > .star > .container > div:nth-of-type(200) {
+  top: 98px;
+}/*# sourceMappingURL=trick2.css.map */
